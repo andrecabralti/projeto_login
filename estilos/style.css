@@ -68,10 +68,11 @@ div#formulario > p{
 
 form > div.campo{
     background-color: #5f2c82;
+    border: 2px solid #5f2c82 ;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px; /*cima e embaixo fica com 5 e esq e direita 0 */
 }
 
@@ -79,6 +80,29 @@ div.campo > label{
     display: none;
 }
 
+div.campo > i {
+    color: white;
+    /*background-color: black*/;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #53b1ae;
+    font-size: 1em;
+    height: 100%;
+    border: 0px;
+    width: calc(100% - 44px); /*esse cálculo foi necessário para caber direitinho*/
+    transform: translate(-12px); /*moveu para cima*/
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo > input: :focus-within{
+    background-color: white;
+    border: none;
+}
 form > input[type = submit] {
     display: block;
     font-size: 1em;
