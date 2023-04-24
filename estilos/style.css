@@ -30,7 +30,7 @@ section#login{
     position: absolute;  /*configurações para ficar no meio da tela*/
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden; /*Tyudo que estiver fora da borda, fica escondido*/
 
     background-color: white;
@@ -41,6 +41,8 @@ section#login{
 
     transition: width .3s, heiht: .3s; /*faz uma animação na transição*/
     transition-timing-function: ease; /*dá uma suavizada*/
+
+    transform: translate(-50%, -50%);
 }
 
 section#login >div#imagem {
@@ -94,9 +96,9 @@ div.campo > input{
     height: 100%;
     border: 0px;
     width: calc(100% - 44px); /*esse cálculo foi necessário para caber direitinho*/
-    transform: translate(-12px); /*moveu para cima*/
     border-radius: 8px;
     padding: 4px;
+    transform: translate(-12px); /*moveu para cima OBS: SEMPRE COLOCAR NO FINAL*/
 }
 
 div.campo > input: :focus-within{
